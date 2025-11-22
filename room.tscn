@@ -1,6 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://c7nnrbeqhgieh"]
+[gd_scene load_steps=8 format=3 uid="uid://c7nnrbeqhgieh"]
 
 [ext_resource type="PackedScene" uid="uid://coplxaemyo182" path="res://player.tscn" id="1_88gup"]
+[ext_resource type="PackedScene" uid="uid://d13ncj72vw56u" path="res://npc.tscn" id="4_v5vuv"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_v321d"]
 size = Vector2(800, 20)
@@ -93,3 +94,18 @@ shape = SubResource("RectangleShape2D_4o3f6")
 
 [node name="Player" parent="." instance=ExtResource("1_88gup")]
 position = Vector2(393, 272)
+
+[node name="NPC" parent="." instance=ExtResource("4_v5vuv")]
+position = Vector2(221, 322)
+display_text = "This is a test"
+npc_color = Color(1, 0, 0, 1)
+
+[node name="NPC2" parent="." instance=ExtResource("4_v5vuv")]
+position = Vector2(143, 210)
+display_text = "Another test, love you long time"
+npc_color = Color(2.9841065e-06, 0.718878, 0.6620644, 1)
+
+[node name="NPC3" parent="." instance=ExtResource("4_v5vuv")]
+position = Vector2(373, 163)
+display_text = "Hi my name is jerry"
+npc_color = Color(1, 1, 0, 1)
