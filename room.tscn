@@ -1,5 +1,6 @@
-[gd_scene load_steps=8 format=3 uid="uid://c7nnrbeqhgieh"]
+[gd_scene load_steps=9 format=3 uid="uid://c7nnrbeqhgieh"]
 
+[ext_resource type="PackedScene" uid="uid://btege1qjtd5bi" path="res://ui.tscn" id="1_4o3f6"]
 [ext_resource type="PackedScene" uid="uid://coplxaemyo182" path="res://player.tscn" id="1_88gup"]
 [ext_resource type="PackedScene" uid="uid://d13ncj72vw56u" path="res://npc.tscn" id="4_v5vuv"]
 
@@ -19,6 +20,8 @@ size = Vector2(20, 280)
 size = Vector2(800, 20)
 
 [node name="Room" type="Node2D"]
+
+[node name="UI" parent="." instance=ExtResource("1_4o3f6")]
 
 [node name="Floor" type="ColorRect" parent="."]
 offset_right = 800.0
