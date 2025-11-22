@@ -1,0 +1,15 @@
+# Godot 4+ specific ignores
+.import/
+.godot/
+/android/
+
+# Exported builds
+export/
+build/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Godot caches
+*.translation
